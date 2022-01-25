@@ -9,7 +9,7 @@ int main()
 		//fabs()
 		printf("Fabs = %f\n", fabs(-2));
 		//sqrt()
-		printf("sqrt = %f\n", sqrt(2));
+		printf("sqrt = %f\n", sqrt(16));
 		//pow()
 		printf("Power = %f\n", pow(2,3));
 		//log()
@@ -22,3 +22,7 @@ int main()
 		printf("Cosine = %f\n", cos(0.523599));
 		return 0;
 }
+
+//O/P
+
+

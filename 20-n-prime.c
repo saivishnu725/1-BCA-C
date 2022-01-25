@@ -4,7 +4,7 @@ int main()
 		int n,i,j, count;
 		printf("Enter the number: ");
 		scanf("%d", &n);
-		printf("Prime numbers between 2 and %d are:\t",n);
+		printf("Prime numbers between 2 and %d are: ",n);
 		for(i=2;i<=n;i++)
 		{
 				count = 0;
@@ -14,7 +14,7 @@ int main()
 								count++;
 				}
 				if(count == 0)
-						printf("%d\t",i);
+						printf("%d ",i);
 		}
 		printf("\n");
 		return 0;
