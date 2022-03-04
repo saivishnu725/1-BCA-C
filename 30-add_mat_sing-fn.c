@@ -4,13 +4,13 @@ void read()
 {
 		printf("Enter the row and column: ");
 		scanf("%d %d", &r, &c);
-		printf("Enter %d values for Matrix A: ", r);
+		printf("Enter %d values for Matrix A: ", (c * r));
 		for(i = 0; i < r; i++)
 		{
 				for(j = 0; j < c ; j++)
 						scanf("%d", &a[i][j]);
 		}
-		printf("Enter %d values for Matrix B: ", c);
+		printf("Enter %d values for Matrix B: ", (c * r));
 		for(i = 0; i < r; i++)
 		{
 				for(j = 0; j < c; j++)
