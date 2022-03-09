@@ -12,6 +12,6 @@ int main()
 			sum += a[i];
 		i++;
 	}
-	printf("Sum of +ve numbers = %d\n", sum);
+	printf("Sum of positive numbers = %d\n", sum);
 	return 0;
 }
