@@ -1,6 +1,6 @@
 #include<stdio.h>
-
 #include<string.h>
+
 int main()
 {
 		char s[25];
@@ -12,7 +12,7 @@ int main()
 		while (s[i] != '\0')
 				i++;
 		printf("Length = %d\n", i);
-		printf("Length using fn = %ld\n", strlen(s));
+		printf("Length using function = %ld\n", strlen(s));
 		return 0;
 }
 

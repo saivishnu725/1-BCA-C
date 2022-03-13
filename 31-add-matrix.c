@@ -1,12 +1,7 @@
 #include<stdio.h>
-int r, cl;
-void addmat(int x[][5], int y[][5], int z[][5])
-{
-		int i, j;
-}
 int main()
 {
-		int a[10][10], b[10][10], sum[10][10], diff[10][10],i, j;
+		int a[10][10], b[10][10], sum[10][10], diff[10][10],i, j, r, cl;
 
 		printf("Enter number of rows and columns: ");
 		scanf("%d %d", &r, &cl);

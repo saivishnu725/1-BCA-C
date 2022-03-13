@@ -12,7 +12,7 @@ int main()
 		printf("s1 = %s\t s2 = %s\t s3 = %s\n", s1, s2, s3);
 		
 		// Length
-		printf("Length of s1 = %d\n", strlen(s1));
+		printf("Length of s1 = %ld\n", strlen(s1));
 
 		// Concatination
 		printf("s1 before concat = %s\n", s1);
