@@ -8,7 +8,7 @@ int main()
 		printf ("Enter order of the square matrix: ");
 		scanf ("%d", &n);
 		
-		printf ("Enter the matrix\n");
+		printf ("Enter the matrix of order %d x %d\n", n, n);
 		for(i = 0;i < n; i++)
 				for(j = 0;j < n; j++)
 						scanf("%d", &a[i][j]);
