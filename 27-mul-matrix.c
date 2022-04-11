@@ -1,8 +1,8 @@
 #include<stdio.h>
 int r1, r2, c1, c2;
-void mul( int x[][5], int y[][5], int z[][5])
+void mul(int x[][5], int y[][5], int z[][5])
 {
-		int i,j,k;
+		int i, j, k;
 		for(i = 0; i < r1; i++)
 				for(j = 0; j < c2; j++)
 				{

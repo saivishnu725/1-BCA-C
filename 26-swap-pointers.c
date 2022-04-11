@@ -12,9 +12,9 @@ int main()
 		int x, y;
 		printf("Enter two numbers: ");
 		scanf("%d %d", &x, &y);
-		printf("Before\tx = %d \t y = %d\n", x, y);
+		printf("Before\tx = %d\ty = %d\n", x, y);
 		swap(&x, &y);
-		printf("After\tx = %d \t y = %d\n", x, y);
+		printf("After\tx = %d\ty = %d\n", x, y);
 
 		return 0;
 }

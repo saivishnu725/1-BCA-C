@@ -1,57 +1,37 @@
 #include <stdio.h>
-int main() {
-
+int main()
+{
   char ch[150];
-  int i, alpha_count, digit_count, vowel_count, consonant_count, space_count,splchar_count;
+  int i, alpha, digit, vowel, consonant, space, splchar;
+  alpha = digit = vowel = consonant = space = splchar = 0;
 
-  // initialize all variables to 0
-  alpha_count = digit_count = vowel_count = consonant_count = space_count = splchar_count = 0;
-
-  // Get  string input
   printf("Enter a string: ");
-  fgets(ch, sizeof(ch), stdin);     // you can also use --->  gets(ch);
+  fgets(ch, sizeof(ch), stdin);
 
-  // loop through each character of the string
-  for (int i = 0; ch[i] != '\0'; ++i) 
-  {
-      
-    if( ch[i] >= 'a' && ch[i] <= 'z' ||  ch[i] >= 'A' && ch[i] <= 'Z' ){
-        alpha_count ++;
-    
-
-        // check if the character is a vowel
-        if (ch[i] == 'a' || ch[i] == 'e' || ch[i] == 'i' ||
-            ch[i] == 'o' || ch[i] == 'u') 
-    
-          // increment value of vowels by 1
-             vowel_count++;
+  for (i = 0; ch[i] != '\0'; ++i) 
+  {    
+    if(ch[i] >= 'a' && ch[i] <= 'z' ||  ch[i] >= 'A' && ch[i] <= 'Z' )
+	{
+        alpha++;
+        if(ch[i] == 'a' || ch[i] == 'e' || ch[i] == 'i' || ch[i] == 'o' || ch[i] == 'u')
+             vowel++;
         else
-          // increment value of consonant by 1
-            consonant_count++;
+            consonant++;
     }
-    else if (ch[i] >= '0' && ch[i] <= '9') 
-    {
-        // check if the character is a digit
-        digit_count++;
-    }
-    else if (ch[i] == ' ') 
-    {
-       // check if the character is an empty space
-      space_count++;
-    }
+    else if (ch[i] >= '0' && ch[i] <= '9')
+        digit++;
+    else if (ch[i] == ' ')
+      space++;
     else
-    {
-      splchar_count++;
-    }
-    
+      splchar++;
   }
   
-  printf("Alphabets: %d ", alpha_count);
-  printf("\nVowels: %d ", vowel_count);
-  printf("\nConsonants: %d ", consonant_count);
-  printf("\nDigits: %d ", digit_count);
-  printf("\nWhite spaces: %d ", space_count);
-  printf("\nSpecial Character: %d\n ", splchar_count);
+  printf("Alphabets: %d\n", alpha);
+  printf("Vowels: %d\n", vowel);
+  printf("Consonants: %d\n", consonant);
+  printf("Digits: %d \n", digit);
+  printf("White spaces: %d\n", space);
+  printf("Special Character: %d\n", splchar);
 
   return 0;
 }

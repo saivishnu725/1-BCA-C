@@ -1,0 +1,13 @@
+Structure: 	Num = 10	Decimal = 1.10	Name = Name
+Union: 	Num = 1701667150	Decimal = 70062238194224418783232.00	Name = Name
+
+Size of structure = 28
+Size of union = 20
+
+Accessing all the values at a time.
+Structure: 	Num = 10	Decimal = 1.10	Name = Name
+Union: 	Num = 1701667150	Decimal = 70062238194224418783232.00	Name = Name
+
+Accessing one value at a time.
+Structure values: num = 20	Decimal = 2.20	Name = Again
+Union values: num = 20	Decimal = 2.20	Name = Again

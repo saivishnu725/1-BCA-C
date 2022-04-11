@@ -10,7 +10,7 @@ int main()
     switch (ch)
     {
     case '+':
-        sum = a + b;
+     sum = a + b;
         printf("Sum = %d\n", sum);
         break;
     case '-':

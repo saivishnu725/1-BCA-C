@@ -8,7 +8,7 @@ int main()
 		printf("Enter the string: ");
 		scanf("%s", s1);
 		
-		printf("len of s1 = %ld\n", strlen(s1));
+		// printf("len of s1 = %ld\n", strlen(s1));
 		p1 = s1 + strlen(s1) - 1;
 		p2 = s2;
 
