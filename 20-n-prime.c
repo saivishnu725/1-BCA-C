@@ -1,21 +1,21 @@
 #include<stdio.h>
 int main()
 {
-		int n,i,j, count;
-		printf("Enter the number: ");
-		scanf("%d", &n);
-		printf("Prime numbers between 2 and %d are: ",n);
-		for(i=2;i<=n;i++)
+	int n,i,j, count;
+	printf("Enter the number: ");
+	scanf("%d", &n);
+	printf("Prime numbers between 2 and %d are: ",n);
+	for(i=2;i<=n;i++)
+	{
+		count = 0;
+		for(j=2;j<i;j++)
 		{
-				count = 0;
-				for(j=2;j<i;j++)
-				{
-						if( i % j == 0)
-								count++;
-				}
-				if(count == 0)
-						printf("%d ",i);
+			if( i % j == 0)
+				count++;
 		}
-		printf("\n");
-		return 0;
+		if(count == 0)
+			printf("%d ",i);
+	}
+	printf("\n");
+	return 0;
 }
